@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>1TaskWEB(05.05.2021)</title>
+    </head>
+    <body>
+        <form>
+            <input type="number" id="first">
+            <input type="number" id="second">
+        </form>
+        <div id="result"></div>
+        <div id="summation" style="background-color:lightblue">+</div>
+        <div id="substraction" style="background-color:lightgray">-</div>
+        <div id="multiplication" style="background-color:lightblue">*</div>
+        <div id="division" style="background-color:lightgray">/</div>
+        <button id="cleanOut">Clear</button>
+        <script>
+            document.getElementById('summation').onclick = function (){
+                let a = parseInt(document.getElementById('first').value, 10);
+                let b = parseInt(document.getElementById('second').value, 10);
+                let c = document.getElementById('result');
+                let outputArea = document.createElement('input');
+                outputArea.value = a+b;
+                outputArea.classList.add("newOutputArea");
+                document.querySelectorAll('.newOutputArea').forEach(e => e.remove());
+                c.appendChild(outputArea);
+            }
+            document.getElementById('substraction').onclick = function (){
+                let a = parseInt(document.getElementById('first').value, 10);
+                let b = parseInt(document.getElementById('second').value, 10);
+                let c = document.getElementById('result');
+                let outputArea = document.createElement('input');
+                outputArea.value = a-b;
+                outputArea.classList.add("newOutputArea");
+                document.querySelectorAll('.newOutputArea').forEach(e => e.remove());
+                c.appendChild(outputArea);
+            }
+            document.getElementById('multiplication').onclick = function (){
+                let a = parseInt(document.getElementById('first').value, 10);
+                let b = parseInt(document.getElementById('second').value, 10);
+                let c = document.getElementById('result');
+                let outputArea = document.createElement('input');
+                outputArea.value = a*b;
+                outputArea.classList.add("newOutputArea");
+                document.querySelectorAll('.newOutputArea').forEach(e => e.remove());
+                c.appendChild(outputArea);
+            }
+            document.getElementById('division').onclick = function (){
+                let a = parseInt(document.getElementById('first').value, 10);
+                let b = parseInt(document.getElementById('second').value, 10);
+                let c = document.getElementById('result');
+                let outputArea = document.createElement('input');
+                outputArea.value = a/b;
+                outputArea.classList.add("newOutputArea");
+                document.querySelectorAll('.newOutputArea').forEach(e => e.remove());
+                c.appendChild(outputArea);
+            }
+            document.getElementById('cleanOut').onclick = function (){
+                document.getElementById('first').value = "";
+                document.getElementById('second').value = "";
+                document.querySelectorAll('.newOutputArea').forEach(e => e.remove());
+            }
+        </script>
+    </body>
+</html>

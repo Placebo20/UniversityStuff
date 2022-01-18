@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="DeviceShop">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Device"  maxOccurs="unbounded" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id" type="xs:string"/>
+                            <xs:element name="name" type="xs:string"/>
+                            <xs:element name="origin" type="xs:string"/>
+                            <xs:element name="price">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:short">
+                                        <xs:minInclusive value="0"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="critical" type="xs:boolean"/>
+                            <xs:element name="types">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="peripheral" type="xs:boolean"/>
+                                        <xs:element name="energyConsumption">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:short">
+                                                    <xs:minInclusive value="0"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="cooler" type="xs:boolean"/>
+                                        <xs:element name="group" type="xs:string"/>
+                                        <xs:element name="port" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+}
+.page {
+    width: 50%;
+    height: 50vh;
+    display: grid;
+    border: 2px solid #ff5e0d;
+    border-radius: 4px;
+    font-family: "Arial", sans-serif;
+    font-weight: bolder;
+    color: #fc3d1b;
+    grid-template-areas:
+    "a a a"
+    "a a a"
+    "b c e"
+    "b d .";
+}
+.el {
+    background-color: #ffd7a4;
+    border: 2px solid #ff5b0b;
+    border-radius: 6px;
+    padding: 6%;
+}
+.line {
+    background-color: #fffad9;
+    border: 3px solid #ffec8e;
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+    flex: 1;
+}
+#first {
+    grid-area: a;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    border-color: #ffa33a;
+}
+#second {
+    grid-area: b;
+    border-color: #ffa33a;
+}
+#third {
+    grid-area: c;
+    border-color: #ffa33a;
+}
+#fourth {
+    grid-area: d;
+    border-color: #ffa33a;
+}
+#fiveth {
+    grid-area: e;
+    border-color: #ffa33a;
+}

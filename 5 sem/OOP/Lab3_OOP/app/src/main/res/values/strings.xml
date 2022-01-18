@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nameOfApp">Lab3_OOP</string>
+    <string name="highScore">HIGH SCORE</string>
+    <string name="score">SCORE</string>
+    <string name="creator">2048 game was coded by Hushcha Dmytro IPS-31</string>
+    <string name="playerWin">Nice job buddy!</string>
+    <string name="gameIsOver">Not today...</string>
+    <string name="tapToEndlessMode">Tap to enter endless mode</string>
+    <string name="forNow">For now…</string>
+    <string name="endlessMode">"Endless" Mode</string>
+</resources>

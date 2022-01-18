@@ -1,0 +1,12 @@
+.cf {
+    padding: 0;
+}
+.row {
+    margin: 10px 0;
+}
+.row div {
+    background-color: #439bd6;
+}
+.row div:nth-child(even) {
+    background-color: #3279ca;
+}

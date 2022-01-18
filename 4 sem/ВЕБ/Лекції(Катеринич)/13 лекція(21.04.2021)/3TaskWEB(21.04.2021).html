@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>3TaskWEB(21.04.2021)</title>
+        <style>
+            .grid {
+                border: 2px solid black;
+                width: 98%;
+                display: grid;
+                padding: 12px;
+                grid-gap: 12px 12px;
+                grid-template-areas:
+                    "a b1 b b"
+                    "f b1 b b";
+                    grid-template-areas:
+                    ". a . "
+                    ". f ."
+                    ". b1 ."
+                    ". b .";
+            }
+        </style>
+        <script type="text/javascript">
+            function myFunction() {
+                var firstX = +document.getElementById('x1').value;
+                var firstY = +document.getElementById('y1').value;
+                var secondX = +document.getElementById('x2').value;
+                var secondY = +document.getElementById('y2').value;
+                if(firstX * secondX > 0 && firstY * secondY > 0) result.value = 'Length is = ' + Math.sqrt((firstX - secondX)*(firstX - secondX) + (firstY - secondY)*(firstY - secondY));
+                else {
+                    if(firstX != 0 && firstY != 0){
+                        if(firstX > 0 && firstY > 0) result.value += "First point located in 1 quarter";
+                        if(firstX < 0 && firstY > 0) result.value += "First point located in 2 quarter";
+                        if(firstX < 0&& firstY < 0) result.value += "First point located in 3 quarter";
+                        if(firstX > 0 && firstY < 0) result.value += "First point located in 4 quarter";
+                    } else {
+                        if(firstX == 0 && firstY != 0)result.value = "First point located on OY";
+                        if(firstX != 0 && firstY == 0)result.value = "First point located on OX";
+                        if(firstX == 0 && firstY == 0)result.value = "First point located in beginning of coordinates";
+                    }
+                    if(secondX != 0 && secondY != 0){
+                        if(secondX > 0 && secondY > 0) result.value += "Second point located in 1 quarter";
+                        if(secondX < 0 && secondY > 0) result.value += "Second point located in 2 quarter";
+                        if(secondX < 0 && secondY < 0) result.value += "Second point located in 3 quarter";
+                        if(secondX > 0 && secondY < 0) result.value += "Second point located in 4 quarter";
+                    } else {
+                        if(secondX == 0 && secondY != 0)result.value = "Second point located on OY";
+                        if(secondX != 0 && secondY == 0)result.value = "Second point located on OX";
+                        if(secondX == 0 && secondY == 0)result.value = "Second point located in beginning of coordinates";
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="grid">
+            <a style="grid-area: a">
+                x1=<input type="number" id="x1" placeholder="var firstX">
+                y1=<input type="number" id="y1" placeholder="var firstY">   
+            </a>
+            <a style="grid-area: f">
+                x2=<input type="number" id="x2" placeholder="var secondX">
+                y2=<input type="number" id="y2" placeholder="var secondY">   
+            </a>
+            <button id="myFunction" onClick="myFunction()" style="grid-area: b1">Function</button>
+            <input id="result" style="grid-area: b">
+        </div>
+    </body>
+</html>

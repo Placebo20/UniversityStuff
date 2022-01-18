@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+}
+.page {
+    width: 50%;
+    height: 60vh;
+    display: grid;
+    grid-template-areas:
+    "x x x x"
+    "a b c d"
+    "e f g h"
+    "i j . ."
+    "y y y y";
+}
+.header, .footer, .panel {
+    border-radius: 5px;
+    background-color: #444444;
+    margin: 5px;
+    color: #ffffff;
+    padding: 15px;
+    font-family: "Arial", sans-serif;
+}
+.header {
+    grid-area: x;
+}
+.footer {
+    grid-area: y;
+}
+#A {
+    grid-area: a;
+}
+#B {
+    grid-area: b;
+}
+#C {
+    grid-area: c;
+}
+#D {
+    grid-area: d;
+}
+#E {
+    grid-area: e;
+}
+#F {
+    grid-area: f;
+}
+#G {
+    grid-area: g;
+}
+#H {
+    grid-area: h;
+}
+#I {
+    grid-area: i;
+}
+#J {
+    grid-area: j;
+}

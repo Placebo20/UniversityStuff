@@ -1,0 +1,143 @@
+
+@import url(https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap);
+#page {
+	position: absolute;
+    padding-bottom: 0px;
+    background-color: #ffffff;
+	width: 100%;
+	height: 1600px;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	top: 0;
+}
+#right {
+    position: absolute;
+    height: auto;
+    width: 10%;
+    right: 0;
+    top: 0;
+}
+#header {
+    position: absolute;
+    background-color: #52646f;
+    height: 150px;
+    width: 100%;
+    top: 0;
+}
+#menu {
+    position: absolute;
+    background-color: #1a232a;
+    height: 70px;
+    width: 100%;
+    top: 150px;
+}
+ul.menuList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 4px;
+}
+
+ul.menuList li {
+    list-style-type: none;
+    size: 100%;
+    padding: 15px;
+    margin-right: 120px;
+    font-size: 5;
+}
+#slider {
+    position: absolute;
+    background-color: #ffffff;
+    height: 350px;
+    width: 100%;
+    top: 220px;
+}
+#content {
+    position:absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 380px;
+    top: 570px;
+}
+#leftCentralText {
+    position: absolute;
+    background-color: #52646f;
+    width: 28%;
+    height: 650px;
+    left: 100px;
+    top: 30px
+}
+#rightCentralText {
+    position: absolute;
+    background-color: #ffffff;
+    width: 50%;
+    height: 650px;
+    top: 30px;
+    right: 150px;
+}
+#footer {
+    position: absolute;
+    bottom: 0px;
+    background-color: #52646f;
+    width: 100%;
+    height: 200px;
+}
+.sansBold1 {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #777777;
+}
+.sansBold2{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    color: #ffffff;
+}
+.sansBold3{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #000000;
+}
+.sansRegular1{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #777777;
+}
+.sansRegular2{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #ffffff
+}
+.sansRegular3{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #ffffff
+}
+.sansRegular5{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height:22px;
+    color: #000000;
+}
+.sansRegularItalic1{
+    font-family: 'PT Sans', sans-serif;
+    font-style:italic;
+    font-weight: 400;
+    font-size: 38px;
+    color: #ffffff;
+}
+.sansRegularItalic2{
+    font-family: 'PT Sans', sans-serif;
+    font-style:italic;
+    font-weight: 400;
+    font-size: 14px;
+    color: #ffffff;
+}

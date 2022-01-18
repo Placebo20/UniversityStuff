@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<title>1SminarTaskWEB(11.05.2021)</title>
+	<style type="text/css">
+		.place-img{
+			height: 200px;
+			width: 300px;
+		}
+		.place-container{
+			background-color: #f5ddb9;
+			width: 300px;
+			height: 700px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.price{
+			background-color: #e7e9ee;
+		}
+		.price span{
+			font-size: 1.5em;
+			font-weight: bold;
+		}
+		.result-price{
+			background-color: #e7e9ee;
+		}
+		.result-price span{
+			font-size: 2em;
+			font-weight: bold;
+		}
+	</style>
+	<script type="text/javascript">
+		function render(){
+			if(document.getElementById('Greece').checked) {
+                getGreece();
+            }
+            if(document.getElementById('Iceland').checked) {
+                getIceland();
+            }
+    		if(document.getElementById('Germany').checked) {
+                getGermany();
+            }
+            if(document.getElementById('China').checked) {
+                getChina();
+            }
+            if(document.getElementById('France').checked) {
+                getFrance();
+            }
+			
+            document.getElementById('content').style.display = "block";
+
+		}
+		function getGreece(){
+			document.getElementById("flag").src = "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg";
+
+			document.getElementById("title-1").innerHTML = "Athens";
+			document.getElementById("img-1").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Athens_Montage_L.png/245px-Athens_Montage_L.png";	
+			document.getElementById("desc-1").innerHTML = "The culture of Athens has evolved over thousands of years, beginning in Minoan and later in Mycenaean Greece, continuing most notably into Classical Greece, while influencing the Roman Empire and its successor the Byzantine Empire. Other cultures and states such as the Frankish states, the Ottoman Empire, the Venetian Republic and Bavarian and Danish monarchies have also left their influence on modern Greek culture, but historians credit the Greek War of Independence with revitalising Greece and giving birth to a single entity of its multi-faceted culture.";
+			document.getElementById("price-1").innerHTML = "200";
+
+			document.getElementById("title-2").innerHTML = "Tira(Santorini)";
+			document.getElementById("img-2").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Santorini_Landsat.jpg/1024px-Santorini_Landsat.jpg";	
+			document.getElementById("desc-2").innerHTML = "The traditional architecture of Santorini is similar to that of the other Cyclades, with low-lying cubical houses, made of local stone and whitewashed or limewashed with various volcanic ashes used as colours. These colors, in recent years, tend to replace white in the color of house facades, according to the traditional architecture of the island as it was developed until the great earthquake of 1956. The unique characteristic is the common utilisation of the hypóskapha: extensions of houses dug sideways or downwards into the surrounding pumice. These rooms are prized because of the high insulation provided by the air-filled pumice, and are used as living quarters of unique coolness in the summer and warmth in the winter. These are premium storage space for produce, especially for wine cellaring: the Kánava wineries of Santorini.";
+			document.getElementById("price-2").innerHTML = "500";
+
+
+			document.getElementById("title-3").innerHTML = "Corfu";
+			document.getElementById("img-3").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Angelokastro_%28Corfu%29.jpg/1280px-Angelokastro_%28Corfu%29.jpg";	
+			document.getElementById("desc-3").innerHTML = "Corfu has a long musical, theatrical, and operatic tradition. The operas performed in Corfu were at par with their European counterparts. The phrase &#8220;applaudito in Corfu&#8221; (applauded in Corfu) was a measure of high accolade for an opera performed on the island. The Nobile Teatro di San Giacomo di Corfù was the first theatre and opera house of modern Greece and the place where the first Greek opera, Spyridon Xyndas' The Parliamentary Candidate (based on an exclusively Greek libretto) was performed.";
+			document.getElementById("price-3").innerHTML = "100";
+
+		}
+		function getIceland(){
+			document.getElementById("flag").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Iceland.svg/1280px-Flag_of_Iceland.svg.png";	
+
+			document.getElementById("title-1").innerHTML = "Reykjavík";
+			document.getElementById("img-1").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Reykjavik_Main_Image.jpg/250px-Reykjavik_Main_Image.jpg";	
+			document.getElementById("desc-1").innerHTML = "Safnahúsið (the Culture House) was opened in 1909 and has a number of important exhibits. Originally built to house the National Library and National Archives and also previously the location of the National Museum and Natural History Museum, in 2000 it was re-modeled to promote the Icelandic national heritage. Many of Iceland's national treasures are on display, such as the Poetic Edda, and the Sagas in their original manuscripts. There are also changing exhibitions of various topics.";
+			document.getElementById("price-1").innerHTML = "250";
+
+			document.getElementById("title-2").innerHTML = "Þingvellir";
+			document.getElementById("img-2").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Þingvellir_from_the_information_centre.JPG/1920px-Þingvellir_from_the_information_centre.JPG";	
+			document.getElementById("desc-2").innerHTML = "Þingvellir National Park is popular with tourists, and is one of the three key attractions within the Golden Circle. There is a visitor centre, where visitors can obtain interpretation of the history and nature of Þingvellir. There is an information centre near the camping grounds. There are hiking trails, such as the Execution Trail and the nearby Leggjabrjótur. Scuba diving has also become popular at Silfra Lake as the continental drift between the tectonic plates made it wide enough for divers to enjoy unparalleled visibility.";
+			document.getElementById("price-2").innerHTML = "400";
+
+
+			document.getElementById("title-3").innerHTML = "Jökulsárlón";
+			document.getElementById("img-3").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Jökulsárlón_lagoon_in_southeastern_Iceland.jpg/1920px-Jökulsárlón_lagoon_in_southeastern_Iceland.jpg";	
+			document.getElementById("desc-3").innerHTML = "Jökulsárlón is a large glacial lake in southern part of Vatnajökull National Park, Iceland. Situated at the head of the Breiðamerkurjökull glacier, it developed into a lake after the glacier started receding from the edge of the Atlantic Ocean. The lake has grown since then at varying rates because of melting of the glaciers. It is now 1.5 km (0.93 mi) away from the ocean's edge and covers an area of about 18 km2 (6.9 sq mi). In 2009 it was reported to be the deepest lake in Iceland, at over 284 m (932 ft), as glacial retreat extended its boundaries. The size of the lake has increased fourfold since the 1970s.";
+			document.getElementById("price-3").innerHTML = "1000";
+
+		}
+		function getGermany(){
+			document.getElementById("flag").src = "https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg";	
+
+			document.getElementById("title-2").innerHTML = "Cologne";
+			document.getElementById("img-2").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Raddampfer_Goethe_bei_Nacht001.jpg/1920px-Raddampfer_Goethe_bei_Nacht001.jpg";	
+			document.getElementById("desc-2").innerHTML = "Cologne has several museums. The famous Roman-Germanic Museum features art and architecture from the city's distant past; the Museum Ludwig houses one of the most important collections of modern art in Europe, including a Picasso collection matched only by the museums in Barcelona and Paris. The Museum Schnütgen of religious art is partly housed in St. Cecilia, one of Cologne's Twelve Romanesque churches. Many art galleries in Cologne enjoy a worldwide reputation like e.g. Galerie Karsten Greve, one of the leading galleries for postwar and contemporary art.";
+			document.getElementById("price-2").innerHTML = "250";
+
+            document.getElementById("title-1").innerHTML = "Munich";
+			document.getElementById("img-1").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Deutsches_Museum_in_the_Evening.JPG/1920px-Deutsches_Museum_in_the_Evening.JPG";	
+			document.getElementById("desc-1").innerHTML = "The Deutsches Museum or German Museum, located on an island in the River Isar, is the largest and one of the oldest science museums in the world. Three redundant exhibition buildings that are under a protection order were converted to house the Verkehrsmuseum, which houses the land transport collections of the Deutsches Museum. Deutsches Museum's Flugwerft Schleissheim flight exhibition centre is located nearby, on the Schleissheim Special Landing Field. Several non-centralised museums (many of those are public collections at Ludwig-Maximilians-Universität) show the expanded state collections of palaeontology, geology, mineralogy,[78] zoology, botany and anthropology.";
+			document.getElementById("price-1").innerHTML = "250";
+
+			document.getElementById("title-3").innerHTML = "Dresden";
+			document.getElementById("img-3").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Cortège_des_Princes.jpg/1280px-Cortège_des_Princes.jpg";	
+			document.getElementById("desc-3").innerHTML = "Before it was severely damaged from World War II bombings, Dresden was known as the Jewel Box because of its lavish collection of stunning art and architecture. After many years, the city has restored much of its former glory. The capital of the federal state of Saxony, Dresden is one of the largest urban districts in Germany, serving as an important center of government and culture.Dresden offers several interesting landmarks such as the beautiful plaza of Bruehl’s Terrace and the magnificent palace complex known as the Zwinger.";
+			document.getElementById("price-3").innerHTML = "100";
+		}
+		function getChina(){
+			document.getElementById("flag").src = "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg";	
+
+			document.getElementById("title-1").innerHTML = "Great Wall of China";
+			document.getElementById("img-1").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg/1920px-The_Great_Wall_of_China_at_Jinshanling-edit.jpg";	
+			document.getElementById("desc-1").innerHTML = " Is a series of fortifications that were built across the historical northern borders of ancient Chinese states and Imperial China as protection against various nomadic groups from the Eurasian Steppe. Several walls were built from as early as the 7th century BC, with selective stretches later joined together by Qin Shi Huang (220–206 BC), the first emperor of China. Little of the Qin wall remains. Later on, many successive dynasties have built and maintained multiple stretches of border walls. The most well-known sections of the wall were built by the Ming dynasty (1368–1644)."
+			document.getElementById("price-1").innerHTML = "500";
+
+			document.getElementById("title-2").innerHTML = "Beijing";
+			document.getElementById("img-2").src = "https://www.workandliveinchina.com/wp-content/uploads/2018/12/hero_china_beijing_1600x600_05-1024x384.jpg";	
+			document.getElementById("desc-2").innerHTML = "People native to urban Beijing speak the Beijing dialect, which belongs to the Mandarin subdivision of spoken Chinese. This speech is the basis for putonghua, the standard spoken language used in mainland China and Taiwan, and one of the four official languages of Singapore. Rural areas of Beijing Municipality have their own dialects akin to those of Hebei province, which surrounds Beijing Municipality.";
+			document.getElementById("price-2").innerHTML = "500";
+
+			document.getElementById("title-3").innerHTML = "Dunhuang";
+			document.getElementById("img-3").src = "https://upload.wikimedia.org/wikipedia/commons/4/43/Summer_Vacation_2007%2C_263%2C_Watchtower_In_The_Morning_Light%2C_Dunhuang%2C_Gansu_Province.jpg";	
+			document.getElementById("desc-3").innerHTML = "A number of Buddhist cave sites are located in the Dunhuang area, the most important of these is the Mogao Caves which is located 25 km (16 mi) southeast of Dunhuang. There are 735 caves in Mogao, and the caves in Mogao are particularly noted for their Buddhist art, as well as the hoard of manuscripts, the Dunhuang manuscripts, found hidden in a sealed-up cave. Many of these caves were covered with murals and contain many Buddhist statues. Discoveries continue to be found in the caves, including excerpts from a Christian Bible dating to the Yuan Dynasty. Numerous smaller Buddhist cave sites are located in the region, including the Western Thousand Buddha Caves, the Eastern Thousands Buddha Caves, and the Five Temple site. The Yulin Caves are located further east in Guazhou County.";
+			document.getElementById("price-3").innerHTML = "750";
+		}
+        function getFrance(){
+			document.getElementById("flag").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/1280px-Flag_of_France.svg.png";	
+
+            document.getElementById("title-2").innerHTML = "The Côte d'Azur";
+			document.getElementById("img-2").src = "https://www.planetware.com/photos-large/F/best-places-france-french-riviera-villefranche-sur-mer.jpg";	
+			document.getElementById("desc-2").innerHTML = "The Côte d'Azur (French Riviera) is a glamorous stretch of Mediterranean coastline named for its deep azure-blue waters. The skies are often a mesmerizing cerulean hue as well, thanks to the sunny weather most of the year in this area of southern France. The Côte d'Azur begins at Saint-Tropez (overlapping with the Provence region) and extends all the way to Menton, less than 30 kilometers from the border with Italy. The Côte d'Azur became popular with the British as a wintertime resort in the 1820s. Nowadays, it's a bustling (and crowded) summer vacation destination. ";
+			document.getElementById("price-2").innerHTML = "200";
+
+			document.getElementById("title-1").innerHTML = "Paris & Versailles";
+			document.getElementById("img-1").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Vue_aérienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_083.jpg/1280px-Vue_aérienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_083.jpg";	
+			document.getElementById("desc-1").innerHTML = "Appreciated for its elegance and joie de vivre, Paris is a grand European capital filled with architectural masterpieces like the Eiffel Tower and the Notre-Dame Cathedral. Reflecting the city's rich heritage, the Louvre (one of the top museums in Paris) contains an exceptional fine arts collection, while the Musée d'Orsay and the Musée de l'Orangerie display treasures of French Impressionist art. Other charms of Paris are its atmospheric medieval quarters and graceful boulevards. Quintessential tourist experiences include shopping at bookshops in the Latin Quarter, strolling the Champs-Elysées, and people-watching from a sidewalk café terrace on the Boulevard Saint-Germain-de-Prés.To see one of the country's most impressive palaces, tourists can take a 30-minute train ride from Paris to Versailles."
+			document.getElementById("price-1").innerHTML = "400";
+
+			document.getElementById("title-3").innerHTML = "Mont Saint-Michel in Normandy";
+			document.getElementById("img-3").src = "https://www.planetware.com/wpimages/2019/05/france-best-places-to-visit-mont-saint-michel.jpg";	
+			document.getElementById("desc-3").innerHTML = "In the quaint pastoral region of Normandy, a landscape of apple orchards, woodlands, and cow pastures dotted with historic castles and picture-perfect towns, Mont Saint-Michel is among France's top tourist attractions and is number one on a list of Normandy travel destinations. Known as The Heavenly Jerusalem and the Pyramid of the Seas, this little rocky islet off the coast of Normandy boasts a UNESCO-listed abbey built between the 11th and 13th-centuries. The exquisite Gothic abbey church was an important medieval pilgrimage site. Modern-day pilgrims still make the journey here, crossing the Bay of Saint-Michel by foot at low tide.";
+			document.getElementById("price-3").innerHTML = "300";
+		}
+		
+
+
+		function getPrice(){
+			var a = 0;
+			if(document.getElementById('fisrtPlace').checked){a += parseInt(document.getElementById("price-1").textContent);}
+			if(document.getElementById('secondPlace').checked){a += parseInt(document.getElementById("price-2").textContent);}
+			if(document.getElementById('thirdPlace').checked){a += parseInt(document.getElementById("price-3").textContent);}
+			document.getElementById("resultPrice").innerHTML = a.toString() + " 	$";
+
+		}
+	</script>
+</head>
+<body>
+
+	<form id="form" onClick="render()">
+		<h1>Please select country</h1>
+  		<div id="countryChoice" >
+		    <input type="radio" id="Greece"name="countryChoice" value = "Greece"><label for="Greece">Greece</label>
+		    <input type="radio" id="Iceland" name="countryChoice" value = "Iceland"><label for="Iceland">Iceland</label>
+		    <input type="radio" id="Germany"name="countryChoice" value = "Germany"><label for="Germany">Germany</label>
+		    <input type="radio" id="China"name="countryChoice" value = "China"><label for="China">China</label>
+		    <input type="radio" id="France" name="countryChoice" value = "France"><label for="France">France</label>
+		</div>
+
+	</form>
+	<div id="content" style="display: none;">
+		<img id="flag" src="" style="height: 200px; width: 300px;">
+		<form id="places">
+	  		<div class="result-price" id="getPrice" onClick="getPrice()">
+	    		<span style="background-color: #88b5e2">Get price </span>
+	    		<span id="resultPrice"></span>
+	  		</div>	
+			<h2>Please choose the country: </h2>
+  			<div class="container-fluid" id="placeChoice">
+  				<div class="row">
+
+				    <div class="col-sm-4 place-container">
+				    	<input type="checkbox" id="fisrtPlace" name="countryChoice" value = "fisrtPlace">
+				     	<h2 id="title-1"></h2>
+					    <img class="place-img" id="img-1" src="SRC">
+					   	<p id="desc-1">d</p>
+					    <div class="price"><span>Price</span><span id="price-1"></span><span> $</span></div>
+				    </div>
+
+			        <div class="col-sm-4 place-container">
+			        	<input type="checkbox" id="secondPlace" name="countryChoice" value = "secondPlace">
+	 				    <h2 id="title-2"></h2>
+				     	<img class="place-img" id="img-2" src="SRC">
+				     	<p id="desc-2"></p>
+				     	<div class="price"><span>Price</span><span id="price-2"></span><span> $</span></div>
+				    </div>
+
+			    	<div class="col-sm-4 place-container">
+			    	    <input type="checkbox" id="thirdPlace" name="countryChoice" value = "thirdPlace">
+				    	<h2 id="title-3"></h2>
+				     	<img class="place-img" id="img-3" src="SRC">
+				     	<p id="desc-3"></p>
+				     	<div class="price"><span>Price</span><span id="price-3"></span><span> $</span>
+				     	</div>
+				    </div>
+
+				</div>
+			</div>
+		</form>
+		
+	</div>
+</body>
+</html>

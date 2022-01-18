@@ -1,0 +1,31 @@
+.p {
+    background-color: #d63fa1;
+}
+.b {
+    background-color: #49a1db;
+}
+.g {
+    background-color: #41d477;
+}
+.r {
+    background-color: #cc2a37;
+}
+div {
+    border-radius: 10px;
+    margin: 7px;
+    flex: 1;
+}
+body, .col, .row, .content, .page {
+    margin: 0;
+    display: flex;
+}
+.page {
+    height: 100vh;
+    width: 100%;
+}
+.row, .col, .content {
+    padding: 0;
+}
+.content, .col {
+    flex-direction: column;
+}

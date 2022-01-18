@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap);
+.body {
+    background-color: #ffffff;
+    width: 100%;
+}
+.home {
+    width: 100%;
+    height: 135px;
+    border: 1px solid black;
+    background-color: #52646f;
+}
+header > div {
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.logoAstroTech {text-align: right; padding: 0px; padding-right: 3px}
+.mainTitleBlock {text-align: left; padding: 0px; padding-left: 0px; line-height: 15px; padding-top: 10px;}
+.contactTelephones{text-align: center; padding: 0px; line-height: 35px;}
+.menu {
+    background-color: #1a232a;
+    height: auto;
+    width: 100%;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #ffffff;
+}
+div > nav > div > ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+div > nav > div > ul > li {
+    height: 100%;
+    margin-right: 100px;
+}
+.slider {
+    height: auto;
+    border: 1px solid black;
+    width: 100%;
+}
+.content {
+    background-color: #ffffff;
+    width: 100%
+}
+.rowContent {
+    margin-bottom: 100px;
+    margin-top: 30px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.listItemLeftContent {border: 0px; background-color: #52646f;}
+.leftContent {
+    font-family: 'PT Sans', sans-serif;
+    color: #ffffff;
+    margin-left: 70px;
+}
+.rightContent {
+    margin-left: 50px;
+}
+.footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #52646f;
+    height: 100%;
+    width: 100%;
+}
+.footer > div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-items: center;
+    height: 100%; 
+    align-content: center;
+}
+.rowFooter {
+    width: 100%;
+    margin: 0px;
+    height: 150px;
+}
+.sansRegular1 {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #ffffff;
+}
+.sansBold1 {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #ffffff;
+}
+.sansItalic1 {
+    font-family: 'PT Sans', sans-serif;
+    font-style:italic;
+    font-weight: 400;
+    font-size: 32px;
+    color: #ffffff;
+}
+.sansItalic2{
+    font-family: 'PT Sans', sans-serif;
+    font-style:italic;
+    font-weight: 400;
+    font-size: 14px;
+    color: #ffffff;
+}
+@media (max-width: 854px) {
+    .home {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        height: auto;
+        background-color: #52646f;
+    }
+    header > div {
+        display: flex;
+        flex-direction: column;
+    }
+    .logoAstroTech {text-align: center;}
+    .mainTitleBlock {text-align: center}
+    .contactTelephones {max-width: 90%;}
+    .leftContent {max-width: 100%; margin-right: 0; margin-left: 0px;}
+    .rightContent{margin-left: 0; max-width: 90%; margin-top: 50px;}
+    .rowContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .rowFooter {
+        display: flex;
+        flex-direction: column;
+    }
+}

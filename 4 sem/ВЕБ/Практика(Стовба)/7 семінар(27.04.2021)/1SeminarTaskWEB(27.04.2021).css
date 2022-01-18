@@ -1,0 +1,84 @@
+body{
+background-color: #ffffff;
+}
+.header{ 
+background: url(https://i.imgur.com/k884h04.png) local;
+width: 100%;
+min-height: 600px;
+-webkit-box-shadow: inset 0px 15000px 0px #00000080;
+background-size: 100%;
+}
+.kind_card{
+width: 50%;
+padding: 0;
+margin-top: 15px;
+}
+.kind_title{
+font-family: 'Roboto Condensed-700', sans-serif;
+font-size: 34px;
+}
+.kind_text{
+padding: 0 30px;
+margin-top: 32px;
+}
+.kind_btn{
+color: #ffffff;
+width: 100%;
+margin-top: 50px;
+font-size: 15px;
+height: 85px;
+}
+.reason {
+background: url(https://i.imgur.com/e1au4dp.jpg) center top/cover;
+padding: 200px;
+min-height: 500px;
+text-align: -webkit-center;
+-webkit-box-shadow: inset 0px 15000px 0px #00000080;
+background-size: 100%;
+}
+.list{
+justify-content: space-between;
+text-align: center;
+margin-top: -92px;
+}
+.list-item{
+background-color: #eeeeee;
+margin-left: -40px;
+width: 540px;
+margin-top: 15px;
+padding: 63px 60px 90px;
+font-family: 'Roboto Condensed-700', sans-serif;
+}
+.how{
+background-color: #dcad23;
+padding: 100px;
+min-height: 200px;
+text-align: -webkit-center;
+}
+.work-item{
+margin-top: 10%;
+height: 280px;
+}
+.work-img{
+width: 100%;
+height: 100%;
+}
+.info{
+background: url(https://i.imgur.com/k884h04.png) center top/cover;
+padding: 100px;
+min-height: 200px;
+text-align: -webkit-center;
+-webkit-box-shadow: inset 0px 15000px 0px #00000080;
+}
+.footer{
+background: #ffffff;
+padding-top: 56px;
+}
+.footer_strip{
+color: #ffffff;
+background: #dcad23;
+font-size: 14px;
+text-align: center;
+padding: 12px 0 16px;
+margin-top: 50px;
+}

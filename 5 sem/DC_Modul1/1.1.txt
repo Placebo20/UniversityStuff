@@ -1,0 +1,35 @@
+puts 'a:'
+$a = gets.chomp.to_f
+puts 'b:'
+$b = gets.chomp.to_f
+puts 'c:'
+$c = gets.chomp.to_f
+puts 'x start:'
+x_start = gets.chomp.to_f
+puts 'x end:'
+x_end = gets.chomp.to_f
+puts 'x step:'
+x_step = gets.chomp.to_f
+
+is_integer = (($a.to_i and $b.to_i) ^ $c.to_i) == false
+puts is_integer
+
+def func x
+  if x < 1 and $c != 0
+    return $a * x * x + $b / $c
+  end
+  if x > 1.5 and $c == 0
+    return (x - $a) / (x - $c) / (x - $c)
+  end
+  return x * x / $c / $c
+end
+
+x_cur = x_start
+while x_cur < x_end
+  result = func x_cur
+  if is_integer
+    result = result.to_i
+  end
+  puts 'X:' + x_cur.to_s  + ' res: ' + result.to_s
+  x_cur += x_step
+end

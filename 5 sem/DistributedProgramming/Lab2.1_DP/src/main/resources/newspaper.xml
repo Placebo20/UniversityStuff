@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="WINDOWS-1251"?>
+
+<newspaper >
+    <category id="1" name="Coronavirus">
+        <news id="1" name="Omicron: India aims to avoid 'pandemic roulette'"/>
+        <news id="2" name="As the country tries to contain the spread of the Omicron variant, laboratories like the NIV are working round the clock to identify people who might be infected by it. Every day it receives about 100 throat and nasal swabs sealed in small boxes. That's roughly five times more samples than it was testing before the omicron variant - first detected in South Africa and now spreading around the world - appeared."/>
+    </category>
+    <category id="2" name="Climate">
+        <news id="3" name="Climate change: Four cheap ways to save energy at home"/>
+        <news id="4" name="Making your home more energy efficient can be costly and may not be possible if you're renting, or you don't have thousands of pounds stashed away to buy new heat pumps and double glazing. But there are some cheap solutions to try to save money. We've looked at where you are likely to be losing the most energy in your home and come up with some simple solutions to help save money on your bills and keep warm this winter."/>
+    </category>
+
+    <category id="3" name="Tech">
+        <news id="5" name="And Just Like That Peloton resurrects show character"/>
+        <news id="6" name="Fitness equipment maker Peloton has offered a humorous response after the brand featured in the HBO Max show. At the end of last week, the firm's shares slumped after a key character died while using one of the company's exercise bikes. The company approved the show's use of its bikes but said it was not told that Mr Big, played by actor Chris Noth, would die after the workout. But Peloton has now released an advert that brings the character back to life."/>
+    </category>
+
+</newspaper>

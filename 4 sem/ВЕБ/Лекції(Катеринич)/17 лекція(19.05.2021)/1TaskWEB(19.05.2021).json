@@ -1,0 +1,34 @@
+let gallery = {
+    images : [
+      {
+        "name": "star-wars.jpg",
+        "path": "local/images/star-wars.jpg",
+        "date": "new",
+        "Date(2021",
+        1,
+        "1)"
+      },
+      {
+        name : "eagle.png",
+        path: "local/images/eagle.png",
+        date: new Date(2020, 1, 1)  
+      },
+    {
+      name: "",
+      path: "local/undefined",
+      date: new Date(2020, 1, 1)  
+    },
+      {
+        "name": "dad",
+        "path": "local/family/dad",
+        "date": "new",
+        "Date(2019",
+        9,
+        "1)"
+      }
+    ]
+};
+    let jsonTextFullInformation = JSON.stringify(gallery);
+    let jsonTextOnlyNames = JSON.stringify(gallery.images, ["name"]);
+    console.log(jsonTextFullInformation);
+    console.log(jsonTextOnlyNames);

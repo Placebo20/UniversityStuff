@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>1TaskWEB(21.04.2021)</title>
+        <script type="text/javascript">
+            function firstFunction() {
+                var a = +document.getElementById('val1').value;
+                for(var i = 1; i < a+1; i++){
+                    word='';
+                    if(i % 3 == 0){word += 'fizz';}
+                    if(i % 5 == 0){word += 'buzz';}
+                    else if(i % 3 != 0) {word += '' + i;}
+                    alert(word);
+                }
+            }
+            let secondFunction = function() {
+                var a = +document.getElementById('val1').value;
+                for(var i = 1; i < a+1; i++){
+                    word='';
+                    if(i % 3 == 0){word += 'fizz';}
+                    if(i % 5 == 0){word += 'buzz';}
+                    else if(i % 3 != 0) {word += '' + i;}
+                    alert(word);
+                }
+            }
+            let thirdFunction = () => {
+                var a = +document.getElementById('val1').value;
+                for(var i = 1; i < a+1; i++){
+                    word='';
+                    if(i % 3 == 0){word += 'fizz';}
+                    if(i % 5 == 0){word += 'buzz';}
+                    else if(i % 3 != 0) {word += '' + i;}
+                    alert(word);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <input type="number" id="someValue" placeholder="var a">
+            <button id="firstFunction" onClick="firstFunction()">First Function</button>
+            <button id="secondFunction" onClick="secondFunction()">Second Function</button>
+            <button id="thirdFunction" onClick="thirdFunction()">Second Function</button>
+        </div>
+    </body>
+</html>

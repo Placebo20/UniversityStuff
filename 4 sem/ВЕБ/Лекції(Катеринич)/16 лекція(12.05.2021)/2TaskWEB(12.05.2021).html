@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>2TaskWEB(12.05.2021)</title>
+</head>
+<body>
+<script type="text/javascript">
+	function func(obj, key, val) {
+		if (!obj[key]) {
+			obj[key] = val;
+		}
+	}
+	let o = {};
+	let k = "name";
+	let v = "eeee";
+	func(o, k, v);
+	alert(o[k]);
+	v = "aaaa";
+	func(o, k, v);
+	alert(o[k]);
+</script>
+</body>
+</html>

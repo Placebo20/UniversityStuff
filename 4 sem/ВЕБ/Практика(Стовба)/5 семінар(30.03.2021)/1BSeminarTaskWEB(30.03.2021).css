@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+}
+div {
+    flex: 1;
+    margin: 10px;
+    border-radius: 10px;
+}
+.page, .content, .lateral {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.page {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+.content {
+    flex: 6;
+    flex-direction: row;
+}
+.lateral {
+    flex-direction: column;
+}
+.head {
+    background-color: #202020;
+}
+.overhead {
+    flex: 5;
+    background-color: #cab761;
+}
+.below {
+    flex: 2;
+    background-color: #8a8787;
+}
+.primary {
+    flex: 6;
+    background-color: #31a0c2;
+}
+.footer {
+    background-color: #415980;
+}
+
+@media (min-width: 992px) and (max-width:1200) {
+    .page {
+        flex: 8;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .lateral {
+        flex-direction: row-reverse;
+    }
+    .content {
+        flex: 7;
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width: 768px) {
+    .overhead, .below {
+        flex: 1;
+    }
+    .lateral {
+        flex: 3;
+        flex-direction: column;
+    }
+    .content {
+        flex: 10;
+        flex-direction: column-reverse;
+    }
+}

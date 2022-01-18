@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "926623009170",
+    "project_id": "lab3-oop",
+    "storage_bucket": "lab3-oop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926623009170:android:76b6ab8036056ae54d994b",
+        "android_client_info": {
+          "package_name": "com.edu.lab3_oop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "926623009170-v4tppbfdgsem0smevsc5ugmnue9ius8c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWaYKdrFz8hlAcvBoG91mHpIOXYf-KiXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "926623009170-v4tppbfdgsem0smevsc5ugmnue9ius8c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

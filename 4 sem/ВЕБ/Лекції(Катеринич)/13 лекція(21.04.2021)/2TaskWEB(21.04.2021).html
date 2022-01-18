@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<hmtl>
+    <head>
+        <meta charset="UTF-8">
+        <title>2TaskWEB(21.04.2021)</title>
+        <style type="text/css">
+            .grid {
+                border: 2px solid black;
+                width: 98%;
+                display: grid;
+                padding: 12px;
+                grid-gap: 12px;
+                    grid-template-areas: 
+                    ". a ."
+                    "b1 b2 b3"
+                    "b c d";
+
+            }
+        </style>
+        <script type="text/javascript">
+            function firstFunction() {
+                var first = +document.getElementById('firstValue').value;
+                var second = +document.getElementById('secondValue').value;
+                pennyResult.value = second % 100;
+                hryvnaResult.value = first + Math.floor(second/100);
+            }
+            let secondFunction = function() {
+                var first = +document.getElementById('firstValue').value;
+                var second = +document.getElementById('secondValue').value;
+                moneyResultFirst.value = first+ Math.floor(second/100)+ ' грн ' + second % 100 + ' коп';
+            }
+            let thirdFunction = () => {
+                var first = +document.getElementById('firstValue').value;
+                var second = +document.getElementById('secondValue').value;
+                moneyResultSecond.value = first+ Math.floor(second/100)+ ' грн ' + second % 100 + ' коп';
+            }
+        </script>
+    </head>
+    <body>
+        <div class="grid">
+            <a style="grid-area: a">
+                <input type="number" id="firstValue" placeholder="Hryvna count">
+                <input type="number" id="secondValue" placeholder="Penny count">
+            </a>
+            <button id="Money1" onClick="firstFunction()" style="grid-area: b1">First function</button>
+            <button id="Money2" onClick="secondFunction()" style="grid-area: b2">Second function</button>
+            <button id="Money3" onClick="thirdFunction()" style="grid-area: b3">Third function</button>
+            <a "firstFunction()" style="grid-area: b">
+                Вартість замовлення:
+                <input id = "hryvnaResult">грн
+                <input id = "pennyResult">коп    
+            </a>
+            <input id="moneyResultFirst" style="grid-area: c">
+            <input id="moneyResultSecond" style="grid-area: d">
+        </div>
+    </body>
+</hmtl>

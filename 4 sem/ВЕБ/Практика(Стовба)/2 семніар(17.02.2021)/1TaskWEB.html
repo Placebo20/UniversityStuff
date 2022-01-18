@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>1SeminarTaskWEB(17.02.2021)</title>
+        <style>
+            .required {
+                color: red;
+            }
+            .first {
+                color: gray;
+                font-family: 'Times New Roman', Times, serif;
+                font-style: italic;
+            }
+            select {
+                width: 212px;
+            }
+            textarea {
+                width: 212px;
+                height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        
+            <table align="center" cellpadding="5">
+
+                <tr><td align="left"><h1>Форма заявки на работу в зоопарке</h1></td></tr>
+                <tr><td align="left" required><span class="first">Пожалуйста, заполните форму. Обязательны поля помечены<span class="required">*</span></span></td></tr>
+                <form><tr><td>
+                    <fieldset>
+                        <legend>Контактная информация</legend>
+                        <table width="100%" cellpadding="5">
+                            <tr><p>
+                                <td>Имя<span class="required">*</span></td>
+                                <td width="75%"><input type="text"  align="center" size="25"></td>
+                            </p></tr>
+                            <tr><p>
+                                <td>Телефон</td>
+                                <td width="75%"><input type="text"  align="center" size="25"></td>
+                            </p></tr>
+                            <tr><p>
+                                <td>E-mail<span class="required">*</span></td>
+                                <td width="75%"><input type="text"  align="center" size="25"></td>
+                            </p></tr>
+                        </table>
+                    </fieldset>
+                </td></tr>
+
+                <tr><td>
+                    <fieldset>
+                        <legend>Персональная информация</legend>
+                        <table width="100%" cellpadding="5">
+                            <tr><p>
+                                <td>Возраст<span class="required">*</span></td>
+                                <td width="75%"><input type="text"  align="center" size="25"></td>
+                            </p></tr>
+                            <tr><p>
+                                <td>Пол</td>
+                                <td width="75%">
+                                    <select name="select">
+                                        <optgroup>
+                                            <option>Женщина</option>
+                                            <option>Мужчина</option>
+                                        </optgroup>
+                                    </select>
+                                </td>
+                            </p></tr>
+                            <tr><p>
+                                <td>Перечислите личные качества</td>
+                                <td width="75%"><textarea></textarea></td>
+                            </p></tr>
+                        </table>
+                    </fieldset>
+                </td></tr>
+
+                <tr><td>
+                    <fieldset>
+                        <legend>Выберите любимых животных</legend>
+                        <table cellpadding="5px" cellspacing="5px">
+                            <tr>
+                                <td><input type="checkbox">Зебра</td>
+                                <td><input type="checkbox">Кошак</td>
+                                <td><input type="checkbox">Анаконда</td>
+                                <td><input type="checkbox">Человек</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox">Слон</td>
+                                <td><input type="checkbox">Антилопа</td>
+                                <td><input type="checkbox">Голубь</td>
+                                <td><input type="checkbox">Краб</td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td></tr>
+
+                <tr><td><input type="submit" value="Отправить информацию"></td></tr>
+            </form>
+            </table>
+        
+    </body>
+</html>

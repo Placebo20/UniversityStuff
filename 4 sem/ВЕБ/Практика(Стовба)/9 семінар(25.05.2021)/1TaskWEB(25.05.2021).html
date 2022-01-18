@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>1TaskWEB(25.05.2021)</title>
+        <style type="text/css">
+            .block {
+                border: solid;
+                border-width: 2px;
+                border-color: black;
+                margin-top: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <form style="background-color: #add8e6;" name="cart">
+            <div class="block">
+                <p style="text-align: center;">Замовлення на придбання товару</p>
+            </div>
+            <div class="block">
+                <p>Назва товару</p>
+                <select id="books">
+                    <option>Теорія всього - 20.5</option>
+                    <option>Бог як ілюзія - 19.5</option>
+                    <option>Покоління Z - 25.25</option>
+                    <option>Світ в горіховій шкаралупі - 30.5</option>
+                    <option>Фієста - 100.0</option>
+                </select>
+            </div>
+            <div class="block">
+                <label>Кількість:</label>
+                <input type="number" name="" min="0" id="coun">
+                <label>Вартість:</label>
+                <input type="text" name="" readonly id="sum">
+            </div>
+            <div class="block">
+                <p>Спосіб доставки замовлення</p>
+                <input type="radio" name="delivery" checked id="radio1">
+                <label>Поштою</label>
+                <input type="radio" name="delivery" id="radio2">
+                <label>Доставка до дому</label>
+                <input type="checkbox" name="" id="radio3">
+                <label>У свтковій упаковці</label>
+            </div>
+            <div class="block" style="text-align: right;">
+                <label>Загальна вартість замовлення</label>
+                <input type="text" name="" readonly id="res">
+                <button id="result" type="button">Підрахувати</button>
+            </div>
+            <div class="block">
+                <p>Данні замовника</p>
+                <label>Імя:</label>
+                <input type="text" id="nam">
+                <label>Адреса:</label>
+                <input type="text" id="loc">
+            </div>
+            <div class="block" style="text-align: right;">
+                <button type="button" id="clr">Відновити початкові значення полів</button>
+                <button type="button" id="vid">Відіслати дані</button>
+            </div>
+        </form>
+        <div id="tab" style="margin-top: 20px;">
+            
+        </div>
+        <script type="text/javascript" src="1TaskWEB(25.05.2021).js"></script>
+    </body>
+</html>

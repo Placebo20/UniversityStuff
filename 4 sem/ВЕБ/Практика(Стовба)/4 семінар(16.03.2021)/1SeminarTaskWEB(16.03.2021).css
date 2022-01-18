@@ -1,0 +1,147 @@
+#left {
+    left: 40px;
+    top: 40px;
+    background-image: url(https://i.pinimg.com/564x/af/8d/63/af8d63a477078732b79ff9d9fc60873f.jpg);
+}
+
+#center {
+    left: 500px;
+    top: 200px;
+    z-index: 2;
+    background-image: url(https://i.pinimg.com/564x/af/8d/63/af8d63a477078732b79ff9d9fc60873f.jpg);
+}
+
+#right {
+    left: 950px;
+    top: 40px;
+    background-image: url(https://i.pinimg.com/564x/af/8d/63/af8d63a477078732b79ff9d9fc60873f.jpg);
+}
+
+p {
+    font-family: 'Roboto', serif;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+.block {
+    position: absolute;
+    width: 600px;
+    height: 750px;
+    background-size: cover;
+    display: flex;
+    justify-content: left;
+}
+
+.content {
+    width: 60%;
+    padding: 15px;
+}
+
+.image-container {
+    margin: 15px 0px 0px 0px;
+    text-align: center;
+}
+
+.main-image, .tab-switch {
+    width: 100%;
+    border: 5px solid #ffffff;
+    box-sizing: border-box;
+}
+
+.tab-switch {
+    margin: 40px 0 auto 0;
+    background-color: #ffffff;
+}
+
+.image-description {
+    margin-top: 5px;
+}
+
+.tab-buttons {
+    width: 100%;
+    background-color: #cccccc;
+    display: flex;
+    justify-content: left;
+}
+
+.button {
+    background-color: #ffffff;
+    margin-top: 2px;
+    margin-left: 2px;
+    height: 100%;
+    padding: 0 15px 0 15px;
+}
+
+.button-text {
+    margin: 10px 0px 10px 0px;
+    color: #3ca1e4;
+    font-size: 12px;
+}
+
+.button:hover .button-text, .button:first-child .button-text {
+    color: #e9232a
+}
+
+.tab-content {
+    margin: 0;
+    padding: 10px 15px 0px 15px;
+}
+
+.tab-image {
+    width: 25%;
+    border: 4px solid #cccccc;
+    margin: 0 9px 9px 0;
+    float: left;
+}
+
+.tab-text {
+    margin: 0;
+    color: #000000;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.tab-link {
+    margin: 14px 0 14px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.grid {
+    width: 35%;
+    padding: 30px 10px 0 5px;
+}
+
+.grid-image {
+    width: 100%;
+    border: 2px solid #ffffff;
+}
+
+.gid {
+    margin: 0 0 5px 0;
+    text-align: center;
+}
+
+td {
+    padding: 2%;
+}
+
+tr {
+    margin-bottom: 50px;
+}
+
+#center .tab-buttons {
+    background-color: #1ca5d6;
+}
+
+#center .button {
+    background-color: #24b6f0;
+}
+
+#center .button:hover, #center .button:first-child {
+    background-color: #21ca4e
+}
+
+#center .button-text {
+    color: #ffffff;
+}
